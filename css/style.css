@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#map{
+    position: relative;
+}
+#map iframe{
+    width: 100%;
+    height: 500px;
+}
+#map .contact_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#map .contact_form input{
+    display: block;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+}
+#map .contact_form .contact_container{
+    background-color: aqua;
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+}
+#map .contact_form .contact_container h3{
+    text-align: center;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.preloader{
+    width: 200px;
+    height: 200px;
+    border: 5px solid orange;
+    border-radius: 50%;
+    border-top-color: transparent;
+    margin: 50px auto;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: preloader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes preloader {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.line_anime{
+    width: 200px;
+    margin: 50px auto;
+}
+.line_anime span{
+    display: inline-block;
+    background-color: brown;
+    width: 3px;
+    height: 100px;
+    margin: 0 10px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: line_anime;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.line_anime span:nth-child(1){
+    background-color: red;
+    animation-delay: 0.2s;
+    transform-origin: bottom;
+}
+.line_anime span:nth-child(2){
+    background-color: blue;
+    animation-delay: 0.4s;
+    transform-origin: top;
+}
+.line_anime span:nth-child(3){
+    background-color: gold;
+    animation-delay: 0.6s;
+    transform-origin: bottom;
+}
+.line_anime span:nth-child(4){
+    background-color: black;
+    animation-delay: 0.8s;
+    transform-origin: top;
+}
+.line_anime span:nth-child(5){
+    background-color: greenyellow;
+    animation-delay: 1s;
+    transform-origin: bottom;
+}
+@keyframes line_anime {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+.dotted{
+    width: 100px;
+    height: 100px;
+    border: 3px dotted black;
+    margin: 100px auto;
+    border-radius: 50%;
+    border-top-color: transparent;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: dotted;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes dotted {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ball{
+    width: 400px;
+    margin: 50px 50px;
+}
+.ball span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.ball span:nth-child(1){
+    background-color: aqua;
+    animation-delay: -1.2s;
+}
+.ball span:nth-child(2){
+    background-color: green;
+    animation-delay: -1.1s;
+}
+.ball span:nth-child(3){
+    background-color: gold;
+    animation-delay: -0.8s;
+}
+.ball span:nth-child(4){
+    background-color: brown;
+    animation-delay: -0.6s;
+}
+.ball span:nth-child(5){
+    background-color: blue;
+    animation-delay: -0.7s;
+}
+@keyframes ball {
+    0%{
+        transform: scale(0.2);
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    40%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.2);
+    }
+}
+
